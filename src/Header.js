@@ -8,17 +8,19 @@ class Header extends Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home">React-Bootstrap</a>
+            <a href="#home">TAPADKOT?</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
           <NavItem eventKey={1} href="#">
-            Link
+            Housing
           </NavItem>
           <NavItem eventKey={2} href="#">
-            Link
+            Invite a member
           </NavItem>
-          <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+        </Nav>
+        <Nav pullRight>
+          <NavDropdown eventKey={3} title="my account" id="basic-nav-dropdown">
             <MenuItem eventKey={3.1}>Action</MenuItem>
             <MenuItem eventKey={3.2}>Another action</MenuItem>
             <MenuItem eventKey={3.3}>Something else here</MenuItem>
@@ -32,6 +34,3 @@ class Header extends Component {
 }
 
 export default Header;
-/*
-
-*/
