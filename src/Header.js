@@ -1,22 +1,32 @@
 import React, { Component } from "react";
-import "./Header.css";
+
 import { Nav, Navbar, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
+import "./Header.css";
 
 class Header extends Component {
   render() {
     return (
-      <Navbar>
+      <Navbar
+        class="customNavbar"
+        style={{
+          marginBottom: "0",
+          backgroundColor: "rgb(155, 40, 59)",
+          color: "white"
+        }}
+      >
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home">TAPADKOT?</a>
+            <a href="#home" style={{ color: "white" }}>
+              TAPADKOT?
+            </a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
           <NavItem eventKey={1} href="#">
-            Housing
+            <a style={{ color: "white" }}>Housing</a>
           </NavItem>
           <NavItem eventKey={2} href="#">
-            Invite a member
+            <a style={{ color: "white" }}>Invite a member</a>
           </NavItem>
         </Nav>
         <Nav pullRight>
