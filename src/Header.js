@@ -16,17 +16,17 @@ class Header extends Component {
       >
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home" style={{ color: "white" }}>
+            <span href="#home" style={{ color: "white" }}>
               TAPADKOT?
-            </a>
+            </span>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
           <NavItem eventKey={1} href="#">
-            <a style={{ color: "white" }}>Housing</a>
+            <span style={{ color: "white" }}>Housing</span>
           </NavItem>
           <NavItem eventKey={2} href="#">
-            <a style={{ color: "white" }}>Invite a member</a>
+            <span style={{ color: "white" }}>Invite a member</span>
           </NavItem>
         </Nav>
         <Nav pullRight>
