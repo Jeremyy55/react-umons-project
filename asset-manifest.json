@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-umons-project/static/css/main.eb3ffae9.chunk.css",
-  "main.js": "/react-umons-project/static/js/main.499c3ab4.chunk.js",
-  "main.js.map": "/react-umons-project/static/js/main.499c3ab4.chunk.js.map",
-  "static/js/1.fb125c03.chunk.js": "/react-umons-project/static/js/1.fb125c03.chunk.js",
-  "static/js/1.fb125c03.chunk.js.map": "/react-umons-project/static/js/1.fb125c03.chunk.js.map",
+  "main.css": "/react-umons-project/static/css/main.029c405a.chunk.css",
+  "main.js": "/react-umons-project/static/js/main.6ec1db96.chunk.js",
+  "main.js.map": "/react-umons-project/static/js/main.6ec1db96.chunk.js.map",
+  "static/js/1.57fd32f4.chunk.js": "/react-umons-project/static/js/1.57fd32f4.chunk.js",
+  "static/js/1.57fd32f4.chunk.js.map": "/react-umons-project/static/js/1.57fd32f4.chunk.js.map",
   "runtime~main.js": "/react-umons-project/static/js/runtime~main.5cedfc5f.js",
   "runtime~main.js.map": "/react-umons-project/static/js/runtime~main.5cedfc5f.js.map",
-  "static/css/main.eb3ffae9.chunk.css.map": "/react-umons-project/static/css/main.eb3ffae9.chunk.css.map",
+  "static/css/main.029c405a.chunk.css.map": "/react-umons-project/static/css/main.029c405a.chunk.css.map",
   "index.html": "/react-umons-project/index.html",
-  "precache-manifest.b9f28272e8cd5fb14a1aa8cbbd09796f.js": "/react-umons-project/precache-manifest.b9f28272e8cd5fb14a1aa8cbbd09796f.js",
+  "precache-manifest.889d9b88100be5eaf08ce5ed240815fc.js": "/react-umons-project/precache-manifest.889d9b88100be5eaf08ce5ed240815fc.js",
   "service-worker.js": "/react-umons-project/service-worker.js"
 }
