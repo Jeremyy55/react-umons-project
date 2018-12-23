@@ -1,14 +1,20 @@
 .banner {
   width: 100%;
 }
-.fs350 {
-  font-size: 350%;
+.fsh1 {
+  /*font-size: 350%;*/
+  font-size: 400%; /*550*/
 }
-.fs250 {
+.fsh2 {
+  /*font-size: 220%;*/
   font-size: 220%;
 }
+.fsp {
+  font-size: 222%; /*150*/
+  padding-bottom: 15%;
+}
 .marginTop {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .centered {
   text-align: center;
