@@ -25,16 +25,16 @@ class Header extends Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem eventKey={1} href="#">
-              <span style={{ color: "white" }}>Housing</span>
+              <span style={{ color: "white" }}>Logements</span>
             </NavItem>
             <NavItem eventKey={2} href="#">
-              <span style={{ color: "white" }}>Invite a member</span>
+              <span style={{ color: "white" }}>Invite un Membre</span>
             </NavItem>
           </Nav>
           <Nav pullRight>
             <NavDropdown
               eventKey={3}
-              title="my account"
+              title="mon compte"
               id="basic-nav-dropdown"
             >
               <MenuItem eventKey={3.1}>Action</MenuItem>

@@ -11,13 +11,15 @@ function DescriptionComponent() {
         <Col xs={2} md={2} />
         <Col xs={8} md={8}>
           <h1 class="fsh1 centered marginTop">TAPADKOT?</h1>
-          <h2 class="fsh2 centered"> L'umons a une solution!</h2>
           <p class="fsp centered">
-            Tu rencontre des difficultés de logement alors que tu viens visiter
+            Tu rencontres des difficultés de logement alors que tu viens visiter
             l'Umons? <br />
-            Tu quitte ton kot pendant quelques temps et désire le rendre
-            disponible lors de tes déplacements ? <br />
-            Alors TAPADKOT, la plateforme de réservation de logement en ligne de
+            Tu quittes ton kot pendant quelques temps et désires le rendre
+            disponible lors de tes déplacements?
+          </p>
+          <h2 class="fsh2 centered"> L'umons a une solution!</h2>
+          <p class="fsp centered padbot">
+            TAPADKOT, la plateforme de réservation de logement en ligne de
             l'Umons est exactement ce qu'il te faut!
           </p>
         </Col>
