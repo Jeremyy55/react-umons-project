@@ -50,16 +50,10 @@ function Footer() {
           </Row>
           <Row>
             <a href="https://jeremyy55.github.io/react-umons-project/">
-              <img
-                src={window.location.origin + "/img/GitHub-Mark-32px.png"}
-                alt="Github"
-              />
+              <img src={"/img/GitHub-Mark-32px.png"} alt="Github" />
             </a>
             <a href="#" />
-            <img
-              src={window.location.origin + "/img/Facebook-42px.png"}
-              alt="facebook"
-            />
+            <img src={"/img/Facebook-42px.png"} alt="facebook" />
           </Row>
         </Grid>
       </div>
