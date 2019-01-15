@@ -1,10 +1,32 @@
 import React, { Component } from "react";
+//import Auth from "./Auth/Auth.js";
 
 import { Nav, Navbar, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import "./Header.css";
 
+//const auth = new Auth();
+
 class Header extends Component {
+  /*why??*/
+  goTo(route) {
+    this.props.history.replace(`/${route}`);
+  }
+  login() {
+    this.props.auth.login();
+  }
+  logout() {
+    this.props.auth.logout();
+  }
+  componentDidMount() {
+    const { renewSession } = this.props.auth;
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      renewSession();
+    }
+  }
+
   render() {
+    let { isAuthenticated } = this.props.auth;
+
     return (
       <Navbar
         class="customNavbar"
@@ -23,21 +45,46 @@ class Header extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1} href="#">
-              <span style={{ color: "white" }}>Logements</span>
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-              <span style={{ color: "white" }}>Invite un Membre</span>
-            </NavItem>
-          </Nav>
+          {isAuthenticated() && (
+            <Nav>
+              <NavItem eventKey={1} href="#">
+                <span style={{ color: "white" }}>Logements</span>
+              </NavItem>
+              <NavItem eventKey={2} href="#">
+                <span style={{ color: "white" }}>Invite un Membre</span>
+              </NavItem>
+            </Nav>
+          )}
+
           <Nav pullRight>
             <NavDropdown
               eventKey={3}
               title="mon compte"
               id="basic-nav-dropdown"
             >
-              <MenuItem eventKey={3.1}>Action</MenuItem>
+              {!isAuthenticated() && (
+                <MenuItem
+                  eventKey={3.1}
+                  onSelect={() => {
+                    //window.alert("haha");
+                    this.login();
+                  }}
+                >
+                  Connection
+                </MenuItem>
+              )}
+              {isAuthenticated() && (
+                <MenuItem
+                  eventKey={3.1}
+                  onSelect={() => {
+                    //window.alert("haha");
+                    this.logout();
+                  }}
+                >
+                  Déconnection
+                </MenuItem>
+              )}
+
               <MenuItem eventKey={3.2}>Another action</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
