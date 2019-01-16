@@ -8,6 +8,7 @@ import "./Header.css";
 
 class Header extends Component {
   /*why??*/
+  //history = this.props.history;
   goTo(route) {
     this.props.history.replace(`/${route}`);
   }
@@ -85,7 +86,15 @@ class Header extends Component {
                 </MenuItem>
               )}
 
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
+              <MenuItem
+                eventKey={3.2}
+                onSelect={() => {
+                  window.alert("home");
+                  this.goTo("home");
+                }}
+              >
+                empty
+              </MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
               <MenuItem eventKey={3.4}>Separated link</MenuItem>

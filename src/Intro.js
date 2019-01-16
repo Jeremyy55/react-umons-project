@@ -32,6 +32,7 @@ function DescriptionComponent() {
 class Intro extends Component {
   render() {
     const authenticated = this.props.auth;
+    //const history = this.props.history;
     return (
       <React.Fragment>
         <Header auth={authenticated} />
@@ -40,6 +41,7 @@ class Intro extends Component {
           src="http://www.robertviseur.be/news-pic/mons-20100307-panorama-h400.jpg"
           alt="banner"
         />
+
         <DescriptionComponent />
         <Footer />
       </React.Fragment>

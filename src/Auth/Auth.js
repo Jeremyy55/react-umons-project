@@ -40,7 +40,7 @@ export default class Auth {
     this.accessToken = authResult.accessToken;
     this.idToken = authResult.idToken;
     this.expiresAt = expiresAt;
-    history.replace("/home");
+    history.replace("/");
   }
   renewSession() {
     this.auth0.checkSession({}, (err, authResult) => {

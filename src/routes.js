@@ -4,6 +4,9 @@ import Intro from "./Intro";
 import Auth from "./Auth/Auth";
 import history from "./history";
 import Callback from "./Callback/Callback";
+//labo
+import Lempi from "./Lempi";
+import Pierre from "./Pierre";
 
 const auth = new Auth();
 
@@ -15,9 +18,13 @@ const handleAuthentication = (nextState, replace) => {
 
 export const makeMainRoutes = () => {
   return (
-    <Router history={history} component={Intro}>
+    <Router history={history} /*component={Intro}*/>
       <div>
-        <Route path="/" render={props => <Intro auth={auth} {...props} />} />
+        <Route
+          exact
+          path="/"
+          component={props => <Intro auth={auth} {...props} />}
+        />
         <Route
           path="/callback"
           render={props => {
@@ -25,6 +32,8 @@ export const makeMainRoutes = () => {
             return <Callback {...props} />;
           }}
         />
+        <Route path="/Lempi" component={Lempi} />
+        <Route path="/Pierre" component={Pierre} />
       </div>
     </Router>
   );
