@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 import "react-bootstrap";
-import MyDropZone from "./MyDropZone";
+import MyDropZone1 from "./MyDropZone1";
 /*import { request, callback, errorCallback } from "https";*/
 import request from "superagent";
 
@@ -52,14 +52,12 @@ class NewKot extends Component {
       owner: "1"
     };
 
-    fetch("http://172.16.1.187:4000/housing/add", {
+    fetch("http://localhost:4000/housing/add", {
       method: "POST",
       /*mode: "cors",*/
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(string)
     });
-
-    event.preventDefault();
   }
   render() {
     return (
@@ -68,7 +66,7 @@ class NewKot extends Component {
           <Col xs={2} md={2} />
           <Col xs={8} md={8}>
             <h1 class="fsh1 centered marginTop">Add a new Housing</h1>
-            <MyDropZone />
+            <MyDropZone1 />
             <p class="fsp2 centered marginTop">
               <form onSubmit={this.handleSubmit}>
                 <label>

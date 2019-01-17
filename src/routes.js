@@ -7,6 +7,8 @@ import Callback from "./Callback/Callback";
 //labo
 import Lempi from "./Lempi";
 import Pierre from "./Pierre";
+import NewKot from "./NewKot";
+import Catalogue from "./Catalogue";
 
 const auth = new Auth();
 
@@ -32,9 +34,14 @@ export const makeMainRoutes = () => {
             return <Callback {...props} />;
           }}
         />
+        <Route path="/newKot" component={NewKot} />
         <Route path="/Lempi" component={Lempi} />
         <Route path="/Pierre" component={Pierre} />
+        <Route path="/catalogue" component={Catalogue} />
       </div>
     </Router>
   );
 };
+
+/*
+ */

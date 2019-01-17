@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 import { Nav, Navbar, NavItem, MenuItem, NavDropdown } from "react-bootstrap";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 //const auth = new Auth();
 
@@ -52,7 +53,9 @@ class Header extends Component {
           {isAuthenticated() && (
             <Nav>
               <NavItem eventKey={1} href="#">
-                <span style={{ color: "white" }}>Logements</span>
+                <Link to="/newKot">
+                  <span style={{ color: "white" }}>Logements</span>
+                </Link>
               </NavItem>
               <NavItem eventKey={2} href="#">
                 <span style={{ color: "white" }}>Invite un Membre</span>
