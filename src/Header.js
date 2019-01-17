@@ -18,6 +18,9 @@ class Header extends Component {
   logout() {
     this.props.auth.logout();
   }
+  getProfile() {
+    this.props.auth.getProfile();
+  }
   componentDidMount() {
     const { renewSession } = this.props.auth;
     if (localStorage.getItem("isLoggedIn") === "true") {
@@ -89,8 +92,9 @@ class Header extends Component {
               <MenuItem
                 eventKey={3.2}
                 onSelect={() => {
-                  window.alert("home");
-                  this.goTo("home");
+                  let myProfile = this.getProfile();
+                  window.alert(myProfile);
+                  //this.goTo("home");
                 }}
               >
                 empty

@@ -14,6 +14,11 @@ export default class Auth {
     this.getAccessToken = this.getAccessToken.bind(this);
     this.getIdToken = this.getIdToken.bind(this);
     this.renewSession = this.renewSession.bind(this);
+    this.getProfile = this.getProfile.bind(this);
+  }
+
+  getProfile() {
+    return this.profile;
   }
 
   handleAuthentication() {
@@ -39,6 +44,7 @@ export default class Auth {
     let expiresAt = authResult.expiresIn * 1000 + new Date().getTime();
     this.accessToken = authResult.accessToken;
     this.idToken = authResult.idToken;
+    this.profile = authResult.idTokenPayload;
     this.expiresAt = expiresAt;
     history.replace("/");
   }
@@ -75,7 +81,7 @@ export default class Auth {
     clientID: "3j0V4vab7ojAFT644uTInEu3QJDCaSZ4",
     redirectUri: "http://localhost:3000/callback",
     responseType: "token id_token",
-    scope: "openid"
+    scope: "openid profile"
   });
   login() {
     this.auth0.authorize();
