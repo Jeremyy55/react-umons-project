@@ -7,7 +7,9 @@ import carousel from "./carousel.png"
 import ReactBootstrapCarousel from "react-bootstrap-carousel";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
-
+handleClick(){
+  
+};
 
 const catalogue = [
     { title: 'kot 1', description: 'très bel appartement', price: '444', adresse: 'rue de la houille numéro 54', owner: 1 },
@@ -54,7 +56,7 @@ const Catalogue = ({}) => (
                     <p>Nombre de personnes : {owner}</p>
 
                     <p>
-                      <Button bsStyle="success">louer</Button>
+                      <Button bsStyle="success" onClick={this.handleClick}>louer</Button>
                     </p>
                   </ListGroupItem>
                   ))}
